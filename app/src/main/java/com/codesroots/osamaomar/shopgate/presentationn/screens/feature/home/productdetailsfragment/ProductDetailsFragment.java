@@ -137,6 +137,8 @@ public class ProductDetailsFragment extends Fragment {
 
         mViewModel.productDetailsMutableLiveData.observe(this, productDetails ->
         {
+
+
             loading.setVisibility(View.GONE);
             if (productDetails.getProductdetails().size() > 0) {
                 productdetails = productDetails.getProductdetails().get(0);

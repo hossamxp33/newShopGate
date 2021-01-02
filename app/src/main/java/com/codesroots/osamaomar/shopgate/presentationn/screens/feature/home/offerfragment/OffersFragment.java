@@ -47,7 +47,7 @@ public class OffersFragment extends Fragment {
         mViewModel.throwableMutableLiveData.observe(this,throwable ->
                 {
                     progress.setVisibility(View.GONE);
-                    Toast.makeText(getActivity(),throwable.getCause().toString(),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), (CharSequence) throwable.getCause(),Toast.LENGTH_SHORT).show();
                 });
 
         return  view;

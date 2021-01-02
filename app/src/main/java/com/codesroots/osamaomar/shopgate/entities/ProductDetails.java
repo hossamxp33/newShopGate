@@ -7,7 +7,9 @@ public class ProductDetails {
 //    val productdetails: List<Productdetail>,
 //    val related: List<Related>,
 //    val subcat: Int
+/*
 
+ */
     private List<ProductdetailsBean> productdetails;
     private List<Related> related;
     private int cat;
